@@ -21,7 +21,7 @@ def bn_tokenizer(text):
 # 🧠 Step 2: Load Model
 dill.settings['recurse'] = True
 try:
-    with open("nlu_model.pkl", "rb") as f:
+    with open("nlu_pipeline_model.pkl", "rb") as f:
         vectorizer, model = dill.load(f)
 except Exception as e:
     print(f"❌ Model load failed: {e}")
