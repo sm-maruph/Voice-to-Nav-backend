@@ -74,7 +74,6 @@ intent_map = {
 
 app = Flask(__name__)
 CORS(app)
- ✅ Add this new root route
 @app.route("/", methods=["GET"])
 def index():
     return jsonify({"status": "OK", "message": "Voice-to-Nav backend is live 🚀"}), 200
